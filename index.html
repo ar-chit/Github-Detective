@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Detective</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="bg-gray-800 text-white">
+
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold mb-6" heading>GitHub Detective</h1>
+
+        <div class="flex items-center space-x-4 mb-4">
+            <input type="text" placeholder="Enter a GitHub username..."
+                class="p-2 border rounded bg-gray-700 text-white" search>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" search-button>Search</button>
+        </div>
+
+        <div class="flex items-center space-x-4 mb-6">
+            <img src="" alt="" class="w-12 h-12 rounded-full" style="display: none;" user-avatar>
+            <div>
+                <h2 class="text-2xl font-bold" user-name></h2>
+                <a href="#" class="text-blue-500" target="_blank" user-id></a>
+                <p class="text-gray-500" date-of-joining></p>
+                <p class="text-gray-300" user-bio></p>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-4 mb-6">
+            <div class="flex items-center space-x-4">
+                <p class="text-xl font-bold" number-of-repos></p>
+                <p class="text-xl font-bold" number-of-gists></p>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-4 mb-6">
+            <div class="flex items-center space-x-4">
+                <p class="text-xl font-bold" followers-count></p>
+                <p class="text-xl font-bold" following-count></p>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <img src="" alt="" class="w-6 h-6" style="display: none;" email-logo>
+            <a href="#" class="text-blue-500" target="_blank" user-email></a>
+
+            <img src="" alt="" class="w-6 h-6" style="display: none;" location-logo>
+            <p class="text-gray-500" user-location></p>
+
+            <img src="" alt="" class="w-6 h-6" style="display: none;" twitter-logo>
+            <a href="#" class="text-blue-500" target="_blank" twitter-username></a>
+
+            <br>
+
+            <img src="" alt="" class="w-6 h-6" style="display: none;" blog-logo>
+            <a href="#" class="text-blue-500" target="_blank" blog-link></a>
+
+            <img src="" alt="" class="w-6 h-6" style="display: none;" company-logo>
+            <p class="text-gray-300" user-company></p>
+
+            <p class="text-gray-300" is-user-hirable></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
