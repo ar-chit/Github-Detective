@@ -96,8 +96,8 @@ function renderData(data) {
     if (data.twitter_username) {
         twitterLogo.style.display = '';
         twitterLogo.src = "https://cdn-icons-png.flaticon.com/128/5969/5969020.png";
+        twitterUsername.innerHTML = `@${data.twitter_username}`;
     }
-    twitterUsername.innerHTML = `@${data.twitter_username}`;
     twitterUsername.href = `https://twitter.com/${data.twitter_username}`;
 
     if (data.blog) {
